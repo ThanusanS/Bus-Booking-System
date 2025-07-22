@@ -1,0 +1,135 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f0f8ff 0%, #e0e7ff 100%);
+  min-height: 100vh;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+  background: #fff;
+  color: #007bff;
+}
+
+main {
+  padding: 40px 20px 80px 20px;
+  text-align: center;
+}
+
+main img {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  margin-bottom: 24px;
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+}
+
+form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: inline-block;
+  padding: 32px 24px 24px 24px;
+  margin-top: 24px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #007bff;
+  text-align: left;
+}
+
+form input, form textarea {
+  margin: 10px 0 18px 0;
+  padding: 12px;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #b3d1ff;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+form input:focus, form textarea:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+}
+
+form button {
+  margin: 10px 0 0 0;
+  padding: 12px 32px;
+  width: auto;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+}
+
+form button:hover, form button:focus {
+  background: #0056b3;
+}
+
+footer {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.07);
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5px 80px 5px;
+  }
+  form {
+    padding: 18px 8px 16px 8px;
+  }
+  footer {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
